@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Products } from './app.interface';
 
 @Component({
@@ -6,7 +6,7 @@ import { Products } from './app.interface';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   products: Products[] = [];
 
   constructor() { }
